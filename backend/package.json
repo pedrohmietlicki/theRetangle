@@ -1,0 +1,16 @@
+{
+  "name": "theratangle",
+  "version": "1.0.0",
+  "description": "Projeto de estudo como criar um reality show online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Henrique Silva Mietlicki",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
