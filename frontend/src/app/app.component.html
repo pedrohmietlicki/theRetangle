@@ -1,0 +1,67 @@
+
+
+
+
+<div class="container-fluid ">
+    <div class="row d-flex align-items-center ">
+        <div class="col-1">
+            <li class="menu">
+                <ul>
+                    <fa-icon [icon]="faHome"></fa-icon>
+                    
+                </ul>
+                <ul>
+                    <fa-icon [icon]="faComment"></fa-icon>
+                    
+                </ul>
+                <ul>
+                    <fa-icon [icon]="faUser"></fa-icon>
+                </ul>
+                   
+            </li>
+        </div>
+        <div class="col-11">
+            <div class="row justify-content-center ">
+                <div class="col-xl-8  box-chat  d-flex flex-column justify-content-end ">
+                    <div *ngFor="let message of messages" class="row box-mensagem">
+                        <div class="col-2">
+                            <img src="/assets/miniatura.jpeg" class="thumb rounded-circle border-0"alt="ai que merdaa"/>
+                        </div>
+                        <div class="col-10 mensagem ">
+                            <strong>{{message.usuario}}</strong><br>
+                            {{message.mensagem}}
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    
+                    
+                    
+                    <div class="form-group row chat-box my-4">
+                        
+                            <div class="col-10 p-0">
+                                <input class="form-control py-4 chat-input" [(ngModel)]="message" placeholder="digite sua mensagem..."/>
+                            </div>
+                            <div class="col-2 p-0">
+                                <button  (click)="sendMessage()" class="btn btn-primary chat-button">
+                                    <fa-icon [icon]="faPaperPlane"></fa-icon>
+                                </button>
+                            </div>
+                        
+                       
+                    
+                    </div>
+                   
+                   
+                    
+        
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
