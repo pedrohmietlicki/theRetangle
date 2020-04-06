@@ -17,8 +17,8 @@ io.on('connection',(socket)=>{
     socket.on('new-message',(message)=>{
         console.log(message)
         try {
-            let mensagem =message.usuario+": "+message.mensagem;
-            io.emit('new-message',mensagem)
+            
+            io.emit('new-message',message)
         } catch (error) {
             console.log(error)
         }
